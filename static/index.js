@@ -1,1 +1,3 @@
-alert("hello world")
+document.addEventListener('DOMContentLoaded', ()=>{
+    alert("hello,  peterson🤪")
+})
