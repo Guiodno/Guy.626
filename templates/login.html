@@ -8,7 +8,24 @@
                 integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
                  crossorigin="anonymous">
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-    <script src="{{ url_for('static', filename='index.js')}}"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', ()=>{
+
+      document.querySelector('.alert').style.display = 'none';
+
+      document.querySelector('#submit').addEventListener('click' = ()=>{
+      if((document.querySelector("#email").value != '') && (document.querySelector('#password')).value != ''){
+        alert('connect')
+        return true
+      }else{
+        document.querySelector('.alert').style.display = 'block';
+        alert('username or password')
+        return false
+      }
+    })
+})
+alert("hello,  laguerre🤪")
+    </script>
     <title>Login</title>
 </head>
 <body>
